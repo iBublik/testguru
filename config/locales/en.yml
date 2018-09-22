@@ -1,0 +1,138 @@
+en:
+
+  services:
+    gist_header: "Question for %{title} test on TestGuru"
+
+  helpers:
+    select:
+      prompt: "Please select"
+    submit:
+      test:
+        create: "Create Test"
+        update: "Update Test"
+
+    label:
+      test:
+        title: "Title"
+        level: "Level"
+        category_id: "Category"
+      question:
+        body: "Question body"
+      answer:
+        body: "Answer body"
+        correct: "Correct?"
+
+  shared:
+    errors:
+      header:
+        one: "%{count} error detected."
+        other: "%{count} errors detected."
+    main_nav:
+      hello: "Welcome, %{user} Guru"
+      logout: "Logout"
+      login: "Login"
+      signup: "Sign up"
+      admin: "AdminPanel"
+
+  tests:
+    index:
+      header: 'Tricky Tests'
+      id:  "ID"
+      title: "Title"
+      level: "Level"
+      questions: "Questions"
+      actions: "Actions"
+    test:
+      start: "Start"
+
+  admin:
+    nav:
+      hello: "Welcome, %{user} Guru"
+    tests:
+      index:
+        header: 'Tricky Tests'
+        button: 'Create new test'
+        id:  "ID"
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        actions: "Actions"
+        all_gists: "All gists"
+        public: "To public"
+      test:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        cancel: "Cancel"
+      form:
+        back: "Back"
+      new:
+        header: "Create Test"
+      edit:
+        header: "Edit %{title} Test"
+      show:
+        header: "%{title} test information"
+        level: "Level:"
+        author: "Author:"
+        question_create: "Create Question"
+        all_questions: "All questions"
+        body: "Body"
+        actions: "Actions"
+        edit: "Edit"
+        back: "Back"
+      form_inline:
+        submit: "OK"
+    questions:
+      new:
+        header: "Create new %{title} question"
+        back: "Back"
+      edit:
+        header: "Edit %{title} question"
+        back: "Back"
+      question:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure?"
+      show:
+        header: "%{title} Test's Question"
+        body: "Body:"
+        all_answers: "All answers"
+        new_answer: "New answer"
+        edit: "Edit"
+        back: "Back"
+    answers:
+      new:
+        header: "New answer"
+        back: "Back"
+      edit:
+        header: "Editing answer"
+        show: "Show"
+        back: "Back"
+      show:
+        body: "Answer: %{body}"
+        correct: "Correct: %{correct}"
+        back: "Back"
+      answer:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure?"
+
+  tests_mailer:
+    completed_test:
+      subject: 'You just completed TestGuru test.'
+
+  test_passages:
+    result:
+      header: "The %{title} Test Was  Completed"
+      button: "To main"
+    show:
+      header: "Pass the %{title} Test"
+      question_count: "Question: %{q_count}"
+      next: "Next"
+      exit: "Exit"
+      gist_question: "Create Gist"
+    gist:
+      success: "Gist was successfully created"
+      failure: "An error occurred while saving gist"

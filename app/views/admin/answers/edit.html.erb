@@ -1,0 +1,8 @@
+<h1><%= t('.header') %></h1>
+
+<h3><%= @answer.question.body %></h3>
+
+<%= render 'form', answer: @answer %>
+
+<%= link_to t('.show'), admin_answer_path(@answer) %> |
+<%= link_to t('.back'), admin_test_path(@answer.question.test) %>

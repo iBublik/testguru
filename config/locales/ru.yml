@@ -1,0 +1,143 @@
+ru:
+  select_category: "выберите категорию"
+
+  services:
+    gist_header: "Вопрос к тесту %{title} на TestGuru"
+
+  helpers:
+    select:
+      prompt: "Выберите категорию"
+    submit:
+      test:
+        create: "Создать тест"
+        update: "Обновить тест"
+      user:
+        new: "Вход"
+    label:
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+      question:
+        body: "Текст вопроса"
+      answer:
+        body: "Текст ответа"
+        correct: "Правильный"
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружено %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+    main_nav:
+      hello: "Добро пожаловать, гуру %{user} "
+      logout: "Выход"
+      login: "Вход"
+      signup: "Регистрация"
+      admin: "Управление"
+
+  tests:
+    index:
+      header: 'Доступные тесты'
+      id:  "№"
+      title: "Название"
+      level: "Уровень"
+      questions: "Вопросы"
+      actions: "Действия"
+    test:
+      start: "Старт"
+
+  admin:
+    nav:
+      hello: "Добро пожаловать, гуру %{user} "
+    tests:
+      index:
+        header: 'Доступные тесты'
+        button: 'Добавить тест'
+        id:  "№"
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросы"
+        actions: "Действия"
+        all_gists: "Гист"
+        public: "В публичную часть"
+      test:
+        show: "Показать"
+        edit: "Изменить"
+        delete: "Удалить"
+        cancel: "Отмена"
+      form:
+        back: "Назад"
+      new:
+        header: "Создание теста"
+      edit:
+        header: "Редактирование теста \"%{title}\""
+      show:
+        header: "Информация о тесте \"%{title}\""
+        level: "Уровень:"
+        author: "Автор:"
+        question_create: "Добавить вопрос"
+        all_questions: "Все вопросы"
+        body: "Текст"
+        actions: "Действия"
+        edit: "Изменить"
+        back: "Назад"
+      form_inline:
+        submit: "OK"
+    questions:
+      new:
+        header: "Создание нового вопроса к тесту \"%{title}\""
+        back: "Назад"
+      edit:
+        header: "Изменение вопроса к тесту \"%{title}\""
+        back: "Назад"
+      question:
+        show: "Показать"
+        edit: "Изменить"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+      show:
+        header: "Вопрос к тесту \"%{title}\""
+        body: "Вопрос:"
+        all_answers: "Все ответы"
+        new_answer: "Новый ответ"
+        edit: "Изменить"
+        back: "Назад"
+    answers:
+      new:
+        header: "Новый ответ"
+        back: "Назад"
+      edit:
+        header: "Редактирование ответа"
+        show: "Показать"
+        back: "Назад"
+      show:
+        body: "Ответ: %{body}"
+        correct: "Правильный?: %{correct}"
+        back: "Назад"
+      answer:
+        show: "Показать"
+        edit: "Изменить"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+
+  tests_mailer:
+    completed_test:
+      subject: 'Вы усшепно завершили тест на ТестГуру'
+
+  test_passages:
+    result:
+      header: "Тест %{title} успешно завершен."
+      button: "На главную."
+    show:
+      header: "Прохождение теста \"%{title}\""
+      question_count: "Вопрос: %{q_count}"
+      next: "Следующий"
+      exit: "Выход"
+      gist_question: "Добавить Гист"
+    gist:
+      success: "Гист успешно добавлен. %{link}"
+      failure: "При сохранении произошла ошибка"
+      show: "Посмотреть"
