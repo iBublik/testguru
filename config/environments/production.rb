@@ -19,13 +19,23 @@ Rails.application.configure do
     config.action_mailer.default_url_options = { host: 'test-guru2341.herokuapp.com' }
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-      address:              'smtp.gmail.com',
-      port:                 587,
-      user_name:            ENV['SMTP_USERNAME'],
-      password:             ENV['SMTP_PASSWORD'],
-      authentication:       'plain',
-      enable_starttls_auto: true
-    }
+      :authentication => :plain,
+      :address => "smtp.mailgun.org",
+      :port => 587,
+      :domain => "MYDOMAIN.mailgun.org",
+      :user_name => "postmaster@MYDOMAIN.mailgun.org",
+      :password => "MYPASSWORD"
+}
+
+#    config.action_mailer.delivery_method = :smtp
+#    config.action_mailer.smtp_settings = {
+#      address:              'smtp.gmail.com',
+#      port:                 587,
+#      user_name:            ENV['SMTP_USERNAME'],
+#      password:             ENV['SMTP_PASSWORD'],
+#      authentication:       'plain',
+#      enable_starttls_auto: true
+#    }
 
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
