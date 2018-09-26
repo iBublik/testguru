@@ -34,9 +34,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.0'
 gem 'bcrypt-ruby'
 
-gem 'sendgrid-ruby'
-
-
 # LOCALIZATION
 gem 'devise-i18n'
 gem 'rails-i18n', '>= 5.0.0'
