@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light">
   <%= link_to 'TestGuru', root_path, class: 'navbar-brand' %>
-  <%= link_to  'feedback', feedback_path %>
+  <%= link_to 'feedback', feedback_path %>
   <span class="navbar-text">
     <% if user_signed_in?%>
       <%= t('.hello', user: current_user.email) %>
